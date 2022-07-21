@@ -1,6 +1,9 @@
-# Example
+# fp-ts playground
 
-To run this example:
+codesandbox: [link](https://codesandbox.io/s/eloquent-ives-9p7boi?file=/README.md)
 
-- `npm install` or `yarn`
-- `npm run dev` or `yarn dev`
+## Run
+
+```
+yarn start
+```

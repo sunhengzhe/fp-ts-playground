@@ -1,6 +1,7 @@
 import { pipe } from "fp-ts/lib/function";
+import R from "ramda";
 
-const add = (a: number) => a * 2;
-const plus10 = (a: number) => a + 10;
+// A -> (A->B) -> (B->C) -> C
+const p = pipe(2, R.multiply(2), R.add(10));
 
-console.log(pipe(4, add, plus10));
+console.log(p);
