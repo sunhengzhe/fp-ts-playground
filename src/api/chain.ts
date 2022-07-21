@@ -7,17 +7,18 @@ interface Foo {
   };
 }
 
+/**
+ * chain (flatmap)
+ */
 const getBuzz: (_: Foo) => O.Option<string> = flow(
   O.fromNullable,
-  O.map(({ bar }) =>
+  O.chain(({ bar }) =>
     pipe(
       bar,
       O.fromNullable,
       O.map(({ buzz }) => buzz)
     )
-  ),
-  // 拍平一次
-  O.flatten
+  )
 );
 
 console.log("getFizz of undefined", getBuzz(undefined));

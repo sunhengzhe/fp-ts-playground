@@ -5,9 +5,9 @@ interface Foo {
   bar: string;
 }
 
-const getBar = flow(
+const getBar: (_: Foo) => O.Option<string> = flow(
   O.fromNullable,
-  O.map<Foo, string>((a) => a.bar)
+  O.map((a) => a.bar)
 );
 
 console.log("undefined get bar", getBar(undefined));
