@@ -9,5 +9,6 @@ glob("./api/*.ts", { cwd: __dirname }, async (e, files) => {
   for (let file of files) {
     console.log(`***** ${file} *****`);
     await import(file);
+    console.log("");
   }
 });

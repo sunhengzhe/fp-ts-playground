@@ -1,6 +1,6 @@
 # fp-ts playground
 
-codesandbox: [link](https://codesandbox.io/s/eloquent-ives-9p7boi?file=/README.md)
+[quick playground on codesandbox](https://codesandbox.io/s/eloquent-ives-9p7boi?file=/README.md)
 
 ## Run
 
